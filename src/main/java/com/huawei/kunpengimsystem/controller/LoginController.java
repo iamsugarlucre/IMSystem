@@ -25,7 +25,7 @@ public class LoginController {
         nativeUtil.getCpuClocks();
 
         // Call the interface of Sha256
-        String encryptedPassword = nativeUtil.getSha256Digest(password);
+        // String encryptedPassword = nativeUtil.getSha256Digest(password);
 
         User user = userService.login(username, password);
         if (user == null) {
