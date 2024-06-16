@@ -1,11 +1,11 @@
 INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
-        VALUES (NULL,'0219047003425','FD90A979478F2E1792FFFBD46AEC768F8D3E72E98D786A3C584943E9A07D3782','male','Iamsugarlucre','heissugarlucre@gmail.com');
+        VALUES (NULL,'0219047003425','123456','male','Abdulazeez_Isah','heissugarlucre@gmail.com');
 
 INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
-        VALUES (NULL,'Kunpeng','85F5D124DEEC9EAB02B1847B52025E9C57123F4A211AB211F10378D63383CD28','female','东契奇yyds','2222@qq.com');
+        VALUES (NULL,'0219047002012','123456','male','Isaac_Avreson','isaac@gmail.com');
 
 INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
-        VALUES (NULL,'Huawei','1C6731BB057CBF24C7DD9CEE0AD46956BB578DF0420F036E78CAD8791360F2B8','female','hhhhh','3333@qq.com');
+        VALUES (NULL,'0219047003550','123456','male','Mohammed_Usman','3333@qq.com');
 
 INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
         VALUES (NULL,'Sugar','FD90A979478F2E1792FFFBD46AEC768F8D3E72E98D786A3C584943E9A07D3782','male','湖人总冠军','4444@qq.com');
