@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huawei.kunpengimsystem.mapper.ParticipantMapper">
+
+    <select id="selectAllParticipant">
+        SELECT * FROM `participants`
+    </select>
+
+    <select id="selectParticipantByUserId" parameterType="Integer">
+        SELECT * FROM `participants`
+        WHERE `user_id` = #{userId}
+    </select>
+
+    <select id="selectUserNameByConversationId" resultType="String">
+        SELECT users.name FROM participants,users
+        WHERE conversation_id = #{conversationId}
+        AND user_id &lt;&gt; #{userId} AND participants.user_id = users.id
+    </select>
+
+    <select id="selectConversationIdByUserIdAndContactId" resultType="Integer">
+        SELECT `conversation_id` FROM `participants`
+        WHERE user_id = #{userId}
+        AND conversation_id
+        IN ( SELECT `conversation_id` FROM `participants`
+        WHERE user_id = #{contactId} )
+    </select>
+
+    <insert id="createParticipant" parameterType="Participant" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `participants` (`conversation_id`,
+        `user_id`,
+        `type`)
+        VALUES (#{participant.conversationId},
+        #{participant.userId},
+        #{participant.type})
+    </insert>
+
+    <delete id="deleteParticipantById">
+        DELETE
+        FROM `participants`
+        WHERE `id` = #{id}
+    </delete>
+
+</mapper>
