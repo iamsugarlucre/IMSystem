@@ -5,7 +5,7 @@ USE im_system;
 DROP TABLE IF EXISTS users;
 CREATE TABLE IF NOT EXISTS users (
     id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(32) NOT NUll UNIQUE,
+    name BIGINT NOT NUll UNIQUE,
     password VARCHAR(255) NOT NULL,
     gender VARCHAR(32) NOT NULL,
     signature VARCHAR(32) NOT NULL,
@@ -18,7 +18,7 @@ SHOW WARNINGS;
 DROP TABLE IF EXISTS contacts;
 CREATE TABLE IF NOT EXISTS contacts (
     id INT NOT NULL,
-    name VARCHAR(32) NOT NULL,
+    name BIGINT NOT NULL,
     email VARCHAR(32) NOT NULL,
     create_time TIMESTAMP NOT NULL DEFAULT NOW(),
     PRIMARY KEY (id)
@@ -29,7 +29,7 @@ DROP TABLE IF EXISTS user_contact;
 CREATE TABLE IF NOT EXISTS user_contact (
     user_id INT NOT NULL,
     contact_id INT NOT NULL,
-    name VARCHAR(32) NOT NULL,
+    name BIGINT NOT NULL,
     create_time TIMESTAMP NOT NULL DEFAULT NOW(),
     PRIMARY KEY (user_id, contact_id)
 )ENGINE=InnoDB;
