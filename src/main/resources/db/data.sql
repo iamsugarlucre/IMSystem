@@ -5,22 +5,16 @@ INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
         VALUES (NULL,'0219047002012','123456','male','Isaac_Avreson','isaac@gmail.com');
 
 INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
-        VALUES (NULL,'0219047003550','123456','male','Mohammed_Usman','3333@qq.com');
-
-INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
-        VALUES (NULL,'Sugar','FD90A979478F2E1792FFFBD46AEC768F8D3E72E98D786A3C584943E9A07D3782','male','湖人总冠军','4444@qq.com');
+        VALUES (NULL,'0219047003550','123456','male','Mohammed_Usman','angibiusman@gmail.com');
 
 INSERT INTO `contacts`(`id`,`name`,`email`)
-        VALUES (1,'Devkit','1111@qq.com');
+        VALUES (1,'0219047003425','heissugarlucre@gmail.com');
 
 INSERT INTO `contacts`(`id`,`name`,`email`)
-        VALUES (2,'Kunpeng','2222@qq.com');
+        VALUES (2,'0219047002012','isaac@gmail.com');
 
 INSERT INTO `contacts`(`id`,`name`,`email`)
-        VALUES (3,'Huawei','3333@qq.com');
-
-INSERT INTO `contacts`(`id`,`name`,`email`)
-        VALUES (4,'Sugar','4444@qq.com');
+        VALUES (3,'0219047003550','angibiusman@gmail.com');
 
 INSERT INTO `user_contact`(`user_id`,`contact_id`,`name`)
         VALUES (1,2,'小可爱');
