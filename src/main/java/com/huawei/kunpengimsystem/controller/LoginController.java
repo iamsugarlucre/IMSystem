@@ -27,7 +27,7 @@ public class LoginController {
         // Call the interface of Sha256
         String encryptedPassword = nativeUtil.getSha256Digest(password);
 
-        User user = userService.login(username, encryptedPassword);
+        User user = userService.login(username, password);
         if (user == null) {
             return ResultUtil.fail("Incorrect Matric Number or password");
         } else {
