@@ -1,20 +1,20 @@
 INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
-        VALUES (NULL,'0219047003425','123456','male','Abdulazeez_Isah','heissugarlucre@gmail.com');
+        VALUES (NULL, 0219047003425,'Huawei@2024','male','Abdulazeez_Isah','heissugarlucre@gmail.com');
 
 INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
-        VALUES (NULL,'0219047002012','123456','male','Isaac_Avreson','isaac@gmail.com');
+        VALUES (NULL,0219047002012,'123456','male','Isaac_Avreson','isaac@gmail.com');
 
 INSERT INTO `users`(`id`,`name`,`password`,`gender`,`signature`,`email`)
-        VALUES (NULL,'0219047003550','123456','male','Mohammed_Usman','angibiusman@gmail.com');
+        VALUES (NULL,0219047003550,'123456','male','Mohammed_Usman','angibiusman@gmail.com');
 
 INSERT INTO `contacts`(`id`,`name`,`email`)
-        VALUES (1,'0219047003425','heissugarlucre@gmail.com');
+        VALUES (1,0219047003425,'heissugarlucre@gmail.com');
 
 INSERT INTO `contacts`(`id`,`name`,`email`)
-        VALUES (2,'0219047002012','isaac@gmail.com');
+        VALUES (2,0219047002012,'isaac@gmail.com');
 
 INSERT INTO `contacts`(`id`,`name`,`email`)
-        VALUES (3,'0219047003550','angibiusman@gmail.com');
+        VALUES (3,0219047003550,'angibiusman@gmail.com');
 
 INSERT INTO `user_contact`(`user_id`,`contact_id`,`name`)
         VALUES (1,2,'小可爱');
